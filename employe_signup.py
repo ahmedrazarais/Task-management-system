@@ -31,7 +31,7 @@ def sign_up(accounts_users,userfile):
                 duplicate=False  
                 for check in accounts_users:
                         # if username exist in file
-                    if user_name == check["username"]:
+                    if user_name.lower() == check["username"].lower():
                             print("Sorry This Username is already taken")
                             duplicate=True
                             break                  
